@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My Personal Portfolio</title>
+    <style>
+        /* Global Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            /* font-family: Georgia, 'Times New Roman', Times, serif; Medium uses a Serif font, similar to Georgia */
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        body {
+            background-color: #f7f7f7;
+            /* light gray background for body */
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00ab6b;
+            /* Green shade similar to Medium's hyperlink color */
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header Section */
+        .header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #e0e0e0;
+            /* Light grey border color */
+        }
+
+        .header .logo {
+            font-size: 35px;
+            /* or larger, based on preference */
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .header nav a {
+            margin-left: 20px;
+            color: #000000;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .header nav a:hover {
+            color: #00ab6b;
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 50px 40px;
+        }
+
+        .section {
+            margin-bottom: 45px;
+            /* Space between sections */
+        }
+
+        .paragraph {
+            margin-bottom: 35px;
+            /* Space between paragraphs */
+            text-align: justify;
+            /* Justify text for a clean look */
+            padding-right: 100px;
+            /* Space between text and right edge of section */
+            /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif */
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+
+        .section h2 {
+            color: #000000;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .section p,
+        .section ul,
+        .section li {
+            color: #333333;
+            /* Darker grey for better readability */
+            font-size: 14px;
+            /* Medium-like font size for content */
+        }
+
+
+        /* Footer */
+        .footer {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .footer p {
+            color: #ffffff;
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(33, 33, 33, 0.2);
+            }
+
+            100% {
+                box-shadow: 0 0 0 20px rgba(76, 175, 80, 0);
+            }
+        }
+
+        .active-section {
+            box-shadow: 0 0 15px 5px rgba(50, 48, 48, 0.2); /* Dark gray shadow */
+            background-color: #ece2e2; /* Light gray background */
+            transition: background-color 0.1s ease-in-out;
+            animation: pulse 1s infinite;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">Embracing the Art of the Underwhelm</div>
+        <nav>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#work" class="nav-link">Work</a>
+            <a href="#citations" class="nav-link">Citations</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- <div class="header">
+        <div class="container">
+        <h1>Embracing the Art of the Underwhelm: The Unlikely Journey of Sir Squib-a-Lot</h1>
+    </div>
+    </div> -->
+
+    <div class="main-content">
+
+        <div class="section" id="about">
+            <h2>The Unlikely Journey of Sir Squib-a-Lot</h2>
+            <p class="paragraph">
+                Welcome to the epicenter of extraordinary mediocrity, championed by yours truly, the Sultan of Squib,
+                the Maestro of Modest, Sir Squib-a-Lot! In this little nook of the digital universe, you're diving into
+                the world of someone who has passionately embraced the middle ground like a cactus hugs its thorns.
+                Comfortable? Good. Let's unravel the scroll of 'okay-ness.'
+
+                From a tender age, while my peers dreamed of stardom, fame, and multi-million dollar sports contracts, I
+                harbored a different vision: to become the world's most renowned squibber. "Aim for the stars," they
+                said, so I took aim and, well, landed in the nearby bushes. But oh, what splendid bushes they are!
+
+                My career is a tribute to the underplayed art of the 'soft hit.' While home runners knock it out of the
+                park, I nudge the ball like it's a sleeping kitten. No, I don’t make the crowd go wild. We’re more into
+                collective contemplation, a shared moment of, “Huh, look at that.”
+
+                What can you expect here? Tales of my greatest (read: gentlest) squibs, tips on how to perfect your
+                underwhelming swing, and philosophical musings on why the middle road is the road less traveled, but
+                certainly the most richly carpeted with the plush pile of humility.
+
+                Beyond the diamond, I’m a connoisseur of tepid tea, books with slightly worn edges, and songs that never
+                made it past track 8 on their albums. I believe in the beauty of the underdog, the B-side, the
+                overlooked, and the undercooked.
+
+                So, dear visitor, as you explore these pages, remember: in a world chasing the extraordinary, it’s
+                perfectly fine to be extraordinarily... ordinary. In the grand game of life, not all of us need to be
+                the grand slam. Some of us are the squib, softly ensuring that the baseline of brilliance always has a
+                wonderfully dull counterpoint. Welcome to my realm of the delightfully subdued!
+            </p>
+        </div>
+
+        <div class="section" id="work">
+            <h2>Journey Through the Plains of Plainness: An Unheroic Professional Saga</h2>
+            <p class="paragraph">
+                <!-- Summary of my resume -->
+                Welcome to the tranquil trails of my professional escapades, where grandeur takes a backseat, and life's
+                simpler, quieter achievements take the wheel. In this sanctuary of the satisfactory, you will discover
+                not a meteoric rise to the pinnacle of success, but rather a scenic drive through valleys of valuable
+                experiences, each meaningful in their modesty.
+
+                My career, dear reader, has not been one for the storybooks. It has been an odyssey of average, a
+                pilgrimage dedicated to the pursuit of the pleasantly passable. From my early beginnings—as a
+                fresh-faced enthusiast of all things unexceptional—to my current station—as a seasoned connoisseur of
+                the common—I have waved at greatness from a comfortable distance while nestling close to the warm hearth
+                of mediocrity.
+
+                In these pages, you won't find tales of corporate conquests or entrepreneurial exploits that echo
+                through eternity. Instead, I offer you a collage of commendable consistencies: projects completed to a
+                satisfying standard, teamwork that didn’t rock the boat but helped maintain a harmonious voyage, and
+                problem-solving that, while never revolutionary, kept the wheels of the workplace turning without squeak
+                or scandal.
+
+                Throughout my journey, I have worn many hats—though, none too flashy. I've been a reliable cog in many
+                machines, priding myself on punctuality, amiability, and my unerring ability to blend into any
+                professional backdrop with chameleon-like proficiency.
+
+                Leadership for me hasn't been about standing at the helm, barking orders, and steering the ship through
+                stormy seas. Rather, I've been the purveyor of calm, spreading an epidemic of equilibrium, ensuring that
+                sails are set to a mild breeze, and that all on board enjoy the cruise, come rain or shine.
+
+                So, as you peruse this testament to the middling, remember: here lies the resume of one who never soared
+                too close to the sun, but fluttered happily around the porch light, enjoying the simple, soft glow of
+                life's understated moments.
+            </p>
+            <p><a href="Gentle_Glories_Resume.pdf" target="_blank">Gentle Glories [PDF]</a></p>
+        </div>
+
+        <div class="section" id="citations">
+            <h2>Accolades of the Average: My Not-So-Shining Citations</h2>
+            <ul class="paragraph">
+                <!-- List of my publications -->
+                <li class="paragraph">
+                    "Master of the Mild Achievements" in the "Who's Who of Sports' Most Unassuming Figures" - This
+                    publication mistakenly included me, thinking I was someone else. They later realized that I indeed
+                    qualified for my extraordinarily unextraordinary contributions to the game. I didn't make a splash,
+                    but I certainly floated!</li>
+                <li class="paragraph">
+                    "The Echoed Silence of the Unsung Hero" - This award didn't come with a ceremony or even a
+                    certificate. It was more of a nod across the room from the Brotherhood of Forgotten Athletes,
+                    acknowledging that special skill of fading into the background while still technically being in the
+                    game.
+                </li>
+                <li class="paragraph">
+                    "The Not-So-Noble Prize for Physics Defiance" - In a world bound by the laws of physics, I received
+                    this for those squib hits that seemed to challenge gravity, trajectory, and the patience of
+                    physicists. The committee called it "a bewildering ballet of baffling bunts".
+                </li>
+                <!-- Repeat -->
+            </ul>
+        </div>
+
+        <div class="section" id="contact">
+            <h2>Join the Parade of the Pleasantly Mediocre: Get in Touch!</h2>
+            <a href="https://www.linkedin.com/in/sir-squib-a-lot" target="_blank" class="text-center">LinkedIn</a>
+            <a href="https://github.com/squibtech" target="_blank" style="margin-left: 10px"
+                class="text-center">SquibCode [GitHub] </a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2023 Sir Squib-a-Lot! All rights reserved.</p>
+    </div>
+
+
+    <script>
+        // Wait for the entire content of the window to load to attach event listeners
+        window.addEventListener('DOMContentLoaded', (event) => {
+            // Get all navigation links
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            // Function to remove active class from all sections
+            function removeActiveClassFromSections() {
+                document.querySelectorAll('.section').forEach(section => {
+                    section.classList.remove('active-section');
+                });
+            }
+
+            // Iterate over each navigation link
+            for (let link of navLinks) {
+                link.addEventListener('click', function (e) {
+                    // Prevent the default link click behavior
+                    e.preventDefault();
+
+                    // Remove active class from all sections
+                    removeActiveClassFromSections();
+
+                    // Get the target section using the link's href attribute
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+
+                    // Add the active class to the target section
+                    targetSection.classList.add('active-section');
+
+                    // Scroll the section into view
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+
+                    // Set a timeout to remove the active class after 2 seconds
+                    setTimeout(() => {
+                        targetSection.classList.remove('active-section');
+                    }, 1000);  // 2000ms = 2 seconds
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
